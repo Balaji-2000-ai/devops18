@@ -1,9 +1,9 @@
 resource "aws_launch_template" "web_server_as" {
     name = "myproject"
-    image_id           = "ami-0454e52560c7f5c55"
+    image_id           = "ami-000ec6c25978d5999"
     vpc_security_group_ids = [aws_security_group.web_server.id]
     instance_type = "t2.micro"
-    key_name = "lastone"
+    key_name = "balaji-keypair"
     tags = {
         Name = "DevOps"
     }
